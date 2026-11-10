@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b',
+                        accent: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#"
+                class="text-xl font-bold bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">Portfolio.io</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+            </nav>
+            <a href="#contact"
+                class="hidden sm:inline-block px-4 py-2 text-sm font-medium bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-all shadow-lg shadow-blue-500/20">Let's
+                Talk</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-darkBg to-darkBg pointer-events-none">
+        </div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span
+                class="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-blue-400 uppercase bg-blue-950/60 border border-blue-800/50 rounded-full">Frontend
+                Developer & Designer</span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Building digital experiences with <span
+                    class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent">precision
+                    & style</span>.
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+                Clean code, lightning-fast static pages, and modern user interfaces crafted to elevate your web
+                presence.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#projects"
+                    class="w-full sm:w-auto px-8 py-3 font-semibold bg-blue-600 hover:bg-blue-500 text-white rounded-xl transition-all shadow-lg shadow-blue-500/25">View
+                    Projects</a>
+                <a href="#contact"
+                    class="w-full sm:w-auto px-8 py-3 font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-xl transition-all">Get
+                    in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 border-t border-slate-800/60 bg-slate-900/40">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">About Me</h2>
+            <p class="text-slate-300 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+                I am a passionate developer focused on building high-performance, accessible, and responsive static web
+                applications. With a strong foundation in modern web standards, I bridge the gap between creative visual
+                design and robust technical implementation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6 border-t border-slate-800/60">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-12 text-center">Core Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-cardBg border border-slate-800 rounded-2xl hover:border-slate-700 transition-all">
+                    <h3 class="font-semibold text-lg mb-2 text-blue-400">HTML5 & CSS3</h3>
+                    <p class="text-slate-400 text-sm">Semantic markup, responsive layouts, Flexbox, Grid, and modern
+                        animations.</p>
+                </div>
+                <div class="p-6 bg-cardBg border border-slate-800 rounded-2xl hover:border-slate-700 transition-all">
+                    <h3 class="font-semibold text-lg mb-2 text-blue-400">JavaScript (ES6+)</h3>
+                    <p class="text-slate-400 text-sm">Dynamic DOM manipulation, asynchronous programming, and clean
+                        modular code.</p>
+                </div>
+                <div class="p-6 bg-cardBg border border-slate-800 rounded-2xl hover:border-slate-700 transition-all">
+                    <h3 class="font-semibold text-lg mb-2 text-blue-400">Tailwind CSS</h3>
+                    <p class="text-slate-400 text-sm">Rapid utility-first styling for creating fully customized,
+                        adaptive user interfaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 border-t border-slate-800/60 bg-slate-900/40">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-4">Let's Build Something Together</h2>
+            <p class="text-slate-400 mb-8">Have a project in mind or want to collaborate? Drop a message.</p>
+            <form class="space-y-4 text-left" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-1">Your Name</label>
+                    <input type="text" required
+                        class="w-full px-4 py-3 bg-cardBg border border-slate-800 rounded-xl focus:outline-none focus:border-blue-500 text-slate-100 text-sm">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-1">Email Address</label>
+                    <input type="email" required
+                        class="w-full px-4 py-3 bg-cardBg border border-slate-800 rounded-xl focus:outline-none focus:border-blue-500 text-slate-100 text-sm">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-1">Message</label>
+                    <textarea rows="4" required
+                        class="w-full px-4 py-3 bg-cardBg border border-slate-800 rounded-xl focus:outline-none focus:border-blue-500 text-slate-100 text-sm"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full py-3 font-semibold bg-blue-600 hover:bg-blue-500 text-white rounded-xl transition-all shadow-lg shadow-blue-500/25">Send
+                    Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-xs text-slate-500 border-t border-slate-800/80">
+        <p>&copy; 2026 Portfolio.io. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
